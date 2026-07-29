@@ -24,6 +24,12 @@
 
 ---
 
+### [Make 구현]
+- Trigger: Google Forms – Watch Responses
+- Router: 오전 신청 / 오후 신청
+- Action 1: Google Sheets – Add a Row (신청자 시트)
+- Action 2: G-mail – Send a Message (도서 모임 알림)
+
   * 실행 결과 화면
 
     ** 1단계 —  Triger (트리거): Google Sheets Watch New Rows
@@ -103,6 +109,13 @@
 
 ---
 
+### [Zapier 구현]
+- Trigger: Google Forms – New Response in Spreadsheet
+- Filter: 오전, 오후 신청
+- Action 1: Google Sheets – Create Spreadsheet Row
+- Action 2: G-mail – Send Channel Message
+
+---
   * 실행 결과 화면
     
 ---
@@ -126,14 +139,12 @@
            Condition: (Text) Contains
            Value: 오전
 
-![alt text](<화면 캡처 2026-07-28 151853.png>)
-
        *** 오후 Zap 필터 조건
            Field: 신청시간
            Condition: (Text) Contains
            Value: 오후
 
-        Zapier의 Filter는 조건 불충족 시 "다른 경로로 분기"가 아니라 "그 Zap의 실행 중단"입니다. 즉 하나의 Zap으로 두 그룹을 동시에 처리할 수 없고, Zap을 나눠야 두 그룹 모두 정상적으로 답장이 발송됩니다.
+        Zapier의 Filter는 조건 불충족 시 "다른 경로로 분기"가 아니라 "그 Zap의 실행 중단"입니다. 즉 하나의 Zap으로 두 그         룹을 동시에 처리할 수 없고, Zap을 나눠야 두 그룹 모두 정상적으로 답장이 발송됩니다.
 
 ---
 
@@ -327,9 +338,8 @@ Make 를 선택한다. Make는 실시간에 가까운 트리거 처리가 가능
 
 # [프로젝트 2] 자유 주제 자동화 설계 및 구현
   
-   ## 자동화할 반복 업무 정의
-
  ---
+   
    Ⅰ. 프로젝트 개요
 
 1. 주제 선정 배경
@@ -347,6 +357,8 @@ Make 를 선택한다. Make는 실시간에 가까운 트리거 처리가 가능
   키워드 기준으로 유형 분류
   중요 뉴스는 이메일로 자동 알림 발송
 
+---
+
 3. 자동화할 반복 업무 정의
 
   경쟁사 뉴스 페이지 또는 RSS 피드 확인
@@ -354,27 +366,19 @@ Make 를 선택한다. Make는 실시간에 가까운 트리거 처리가 가능
   수집한 내용을 Google Sheets에 정리
   신제품 / 이벤트 / 브랜드 뉴스 등으로 분류
   중요 정보 발생 시 담당자에게 메일 알림
-  
 
-   ## 자동화 도구 1개 선정 및 선정 이유 작성
- 
-1. 선정 도구
-  Make
-
-2. 선정 이유
-  RSS/웹 데이터 감지 후 자동 실행 가능
-  Google Sheets, Gmail 등과 연동이 쉬움
-  Router와 Filter로 뉴스 유형 분류 가능
-  실행 로그가 시각적으로 보여 디버깅과 캡처에 유리
-  무료 플랜에서도 테스트가 가능하고 확장성이 좋음
+   ---
+   
+4. 자동화 도구 선정 및 선정 이유
   
   본 프로젝트에서는 Make를 자동화 도구로 선정하였다. Make는 RSS 기반 뉴스 감지, Google Sheets 저장, 조건 분기, Gmail 발송을 하나의 시나리오에서 구현할 수 있으며, 실행 과정이 시각적으로 표시되어 결과 확인과 과제 제출 자료 구성에 유리하다.
-Ⅲ. 자동화 도구 선정 및 선정 이유
 
+ ---
 
+. 워크플로우 설계
 
-워크플로우 설계 문서
 1. 전체 흐름 설명
+   
 경쟁사 뉴스 RSS 피드에서 새 게시물을 감지
 제목, 링크, 발행일 등의 정보를 추출
 Google Sheets에 자동 저장
@@ -393,6 +397,7 @@ Google Sheets에 자동 저장
    └─ 일반 뉴스 → 시트만 저장
           ↓
 [실행 로그 확인]
+
 
 3. 분류 기준 예시
 제목에 “출시”, “신제품”, “런칭” 포함 → 신제품
