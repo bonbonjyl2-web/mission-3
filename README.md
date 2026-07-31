@@ -21,8 +21,6 @@
     [3-A] Filter: 오전만 통과   [3-B] Filter: 오후만 통과
         ↓                    ↓
     [4-A] Gmail 발송(오전용)    [4-B] Gmail 발송(오후용)
-        ↓                    ↓
-    [5-A] Sheets 상태 업데이트  [5-B] Sheets 상태 업데이트
 
 ---
 
