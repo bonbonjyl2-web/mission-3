@@ -145,7 +145,9 @@
            Value: 오후
 
         Zapier의 Filter는 조건 불충족 시 "다른 경로로 분기"가 아니라 "그 Zap의 실행 중단"입니다. 즉 하나의 Zap으로 두 그룹을 동시에 처리할 수 없고, Zap을 나눠야 두 그룹 모두 정상적으로 답장이 발송됩니다.
+<img width="1088" height="691" alt="Image" src="https://github.com/user-attachments/assets/1533722f-f58b-436d-8e7d-012ad1129fd8" />
 
+<img width="1271" height="724" alt="Image" src="https://github.com/user-attachments/assets/e62630d3-694c-472e-8783-600e254ff760" />
 ---
 
     ** 3단계 — Gmail 발송 (Zap별 템플릿)
