@@ -128,8 +128,10 @@
        Spreadsheet                 신청서 응답이 쌓이는 시트 선택
        Worksheet                   응답 시트 (보통 "설문지 응답 시트1")
        시트 컬럼(A~E)               타임스탬프 | 이름 | 연락처 | 이메일 | 신청시간
+
        
        <img width="419" height="802" alt="Image" src="https://github.com/user-attachments/assets/3b46f2ce-621c-4564-8f4b-7083b3355fd8" />
+       
  ---
 
     ** 2단계 — Filter by Zapier (조건 필터)
@@ -146,6 +148,9 @@
            Value: 오후
 
         Zapier의 Filter는 조건 불충족 시 "다른 경로로 분기"가 아니라 "그 Zap의 실행 중단"입니다. 즉 하나의 Zap으로 두 그룹을 동시에 처리할 수 없고, Zap을 나눠야 두 그룹 모두 정상적으로 답장이 발송됩니다.
+
+  ---
+       
 <img width="1088" height="691" alt="Image" src="https://github.com/user-attachments/assets/1533722f-f58b-436d-8e7d-012ad1129fd8" />
 
 <img width="1271" height="724" alt="Image" src="https://github.com/user-attachments/assets/e62630d3-694c-472e-8783-600e254ff760" />
@@ -179,10 +184,14 @@
                 -제출시간: 
                
                 감사합니다.
+              
+   ---
            
 <img width="711" height="350" alt="Image" src="https://github.com/user-attachments/assets/f4e83ab0-d14f-4167-8f21-19a106661e61" />
 <img width="707" height="315" alt="Image" src="https://github.com/user-attachments/assets/25ab7cb1-8f8a-4430-8965-cb6e24bcab0b" />
+
 ---  
+
 
 ## Make와 Zapier 비교 분석 보고서
 
