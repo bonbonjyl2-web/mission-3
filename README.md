@@ -5,9 +5,15 @@
 
 ---
 
+- Trigger: Google Forms – Watch Responses
+- Router: 오전 신청 / 오후 신청
+- Action 1: Google Sheets – Add a Row (신청자 시트)
+- Action 2: G-mail – Send a Message (도서 모임 알림)
+
+---
+
   * 워크플로우 설계
   
-
     [1] Google Sheets - Watch New Rows (트리거)
         ↓
     [2] Router (2개 경로: 오전 / 오후)
@@ -24,10 +30,6 @@
 
 ---
 
-- Trigger: Google Forms – Watch Responses
-- Router: 오전 신청 / 오후 신청
-- Action 1: Google Sheets – Add a Row (신청자 시트)
-- Action 2: G-mail – Send a Message (도서 모임 알림)
 
   * 실행 결과 
 
