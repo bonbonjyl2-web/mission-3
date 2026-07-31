@@ -128,7 +128,7 @@
        Spreadsheet                 신청서 응답이 쌓이는 시트 선택
        Worksheet                   응답 시트 (보통 "설문지 응답 시트1")
        시트 컬럼(A~E)               타임스탬프 | 이름 | 연락처 | 이메일 | 신청시간
-       
+       <img width="419" height="802" alt="Image" src="https://github.com/user-attachments/assets/3b46f2ce-621c-4564-8f4b-7083b3355fd8" />
  ---
 
     ** 2단계 — Filter by Zapier (조건 필터)
