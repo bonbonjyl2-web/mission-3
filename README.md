@@ -109,6 +109,10 @@
 
 ---
 
+<img width="16384" height="6777" alt="Image" src="https://github.com/user-attachments/assets/8810174a-68f3-4dcb-9839-97e67959845f" />
+
+---
+
 ### [Zapier 구현]
 - Trigger: Google Forms – New Response in Spreadsheet
 - Filter: 오전, 오후 신청
