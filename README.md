@@ -42,7 +42,7 @@
        Limit	                     10 (한 번에 처리할 최대 행 수)
        시트 컬럼(A~E)               타임스탬프 | 이름 | 연락처 | 이메일 | 신청시간 
 
-
+<img width="995" height="843" alt="Image" src="https://github.com/user-attachments/assets/b8ad4d2a-ed51-4cd8-9f09-7ad247cc92bd" />
 
     ** 2단계 — Router (분기)
       Router 모듈을 트리거 바로 뒤에 연결하고, 경로를 2개 생성합니다. Router 자체에는 조건을 걸지 않고, 각 경로 바로 뒤에 Filter를 답니다.
