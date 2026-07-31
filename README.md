@@ -45,7 +45,9 @@
 
 
     ** 2단계 — Router (분기)
-      Router 모듈을 트리거 바로 뒤에 연결하고, 경로를 2개 생성합니다. Router 자체에는 조건을 걸지 않고, 각 경로 바로 뒤        에 Filter를 답니다.
+      Router 모듈을 트리거 바로 뒤에 연결하고, 경로를 2개 생성합니다. Router 자체에는 조건을 걸지 않고, 각 경로 바로 뒤에 Filter를 답니다.
+
+  <img width="615" height="824" alt="Image" src="https://github.com/user-attachments/assets/d31c0e32-a0dd-4105-89d5-76f60a4cd31c" />
 
     ** 3단계 — Filter 조건 (각 경로)
       경로마다 연결선(화살표) 클릭 → Set up a filter
