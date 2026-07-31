@@ -128,6 +128,7 @@
        Spreadsheet                 신청서 응답이 쌓이는 시트 선택
        Worksheet                   응답 시트 (보통 "설문지 응답 시트1")
        시트 컬럼(A~E)               타임스탬프 | 이름 | 연락처 | 이메일 | 신청시간
+       
        <img width="419" height="802" alt="Image" src="https://github.com/user-attachments/assets/3b46f2ce-621c-4564-8f4b-7083b3355fd8" />
  ---
 
@@ -155,17 +156,32 @@
 
        *** 오전 Zap의 Gmail 템플릿
            To: {{이메일}}
-           Subject: [도서모임] {{이름}}님, 오전 시간대 신청이 접수되었습니다
+           Subject: [알림] {{시간}}신청, 새로운 구글 폼 응답이 접수되었습니다. 
+           Body: 안녕하세요
 
-           Body: 안녕하세요,
-                {{날짜}{시간}}님.
-               요청하신 독서 모임 안내 관련 내용 공유해 드립니다. 
+                오전 신청자 안내입니다. 
 
+                -신청자명: 
+                -신청 시간대: 
+                -제출시간: 
+               
                 감사합니다.
 
        *** 오후 Zap의 Gmail 템플릿
-           동일 구조, 제목과 본문의 시간대 문구만 "오후"로 교체
+          To: {{이메일}}
+           Subject: [알림] {{시간}}신청, 새로운 구글 폼 응답이 접수되었습니다. 
+           Body: 안녕하세요
+            
+                오후 신청자 안내입니다. 
 
+                -신청자명: 
+                -신청 시간대: 
+                -제출시간: 
+               
+                감사합니다.
+           
+<img width="711" height="350" alt="Image" src="https://github.com/user-attachments/assets/f4e83ab0-d14f-4167-8f21-19a106661e61" />
+<img width="707" height="315" alt="Image" src="https://github.com/user-attachments/assets/25ab7cb1-8f8a-4430-8965-cb6e24bcab0b" />
 ---  
 
 ## Make와 Zapier 비교 분석 보고서
