@@ -75,13 +75,18 @@
 
 ---
 
-## [Zapier 구현] 
+### [Zapier 구현]
 
 ---
 
-  * 워크플로우 구성 화면
+- Trigger: Google Forms – New Response in Spreadsheet
+- Filter: 오전, 오후 신청
+- Action 1: Google Sheets – Create Spreadsheet Row
+- Action 2: G-mail – Send Channel Message
 
+---
 
+  * 워크플로우 설계
 
     [Zap 1: 오전 처리]
        [1] Google Sheets - New Spreadsheet Row (트리거)
@@ -110,14 +115,8 @@
 
 ---
 
-### [Zapier 구현]
-- Trigger: Google Forms – New Response in Spreadsheet
-- Filter: 오전, 오후 신청
-- Action 1: Google Sheets – Create Spreadsheet Row
-- Action 2: G-mail – Send Channel Message
 
----
-  * 실행 결과 화면
+  * 실행 결과 
     
 ---
 
@@ -145,7 +144,7 @@
            Condition: (Text) Contains
            Value: 오후
 
-        Zapier의 Filter는 조건 불충족 시 "다른 경로로 분기"가 아니라 "그 Zap의 실행 중단"입니다. 즉 하나의 Zap으로 두 그         룹을 동시에 처리할 수 없고, Zap을 나눠야 두 그룹 모두 정상적으로 답장이 발송됩니다.
+        Zapier의 Filter는 조건 불충족 시 "다른 경로로 분기"가 아니라 "그 Zap의 실행 중단"입니다. 즉 하나의 Zap으로 두 그룹을 동시에 처리할 수 없고, Zap을 나눠야 두 그룹 모두 정상적으로 답장이 발송됩니다.
 
 ---
 
@@ -156,25 +155,14 @@
            To: {{이메일}}
            Subject: [도서모임] {{이름}}님, 오전 시간대 신청이 접수되었습니다
 
-           Body: 안녕하세요, {{이름}}님.
+           Body: 안녕하세요,
+                {{날짜}{시간}}님.
+               요청하신 독서 모임 안내 관련 내용 공유해 드립니다. 
 
-                 도서모임 신청이 정상적으로 접수되었습니다.
-                 신청하신 시간대: 오전 (10:00 ~ 12:00)
-
-                 모임 장소 및 준비물 등 자세한 안내는 개별 문자(연락처: {{연락처}})로 추가 전달드리겠습니다.
-
-                 감사합니다.
+                감사합니다.
 
        *** 오후 Zap의 Gmail 템플릿
-           동일 구조, 제목과 본문의 시간대 문구만 "오후 (14:00 ~ 16:00)"로 교체
-
----
-
-    ** 4단계 — 처리 상태 기록 (선택, 중복 발송 방지용)
-       설정 항목               값
-       앱/이벤트               Google Sheets → Update Spreadsheet Row
-       Row                     트리거에서 넘어온 row 값 사용
-       처리상태 컬럼(F열 등)   "오전 답장완료" / "오후 답장완료" (해당 Zap에 맞는 값 입력)
+           동일 구조, 제목과 본문의 시간대 문구만 "오후"로 교체
 
 ---  
 
