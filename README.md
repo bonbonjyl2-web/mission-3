@@ -582,6 +582,19 @@ Fallback - "기타/Fallback"
 
 ⚠️ 1st 경로 (Discord) - 0회 (수집 기간 내 연구개발 기사 미발생)
 ```
+<img width="829" height="925" alt="Image" src="https://github.com/user-attachments/assets/6157dfcd-ad1b-4c54-b154-b9f9c1175813" />
+
+<img width="770" height="923" alt="Image" src="https://github.com/user-attachments/assets/b8f9c1b0-d11a-4a40-b2df-138054ad7a13" />
+
+<img width="691" height="882" alt="Image" src="https://github.com/user-attachments/assets/20187f4e-461f-4c5e-9e77-0ec43b49a334" />
+
+<img width="596" height="482" alt="Image" src="https://github.com/user-attachments/assets/57ebb21b-9c7d-451e-9336-3acc621e000e" />
+
+<img width="566" height="514" alt="Image" src="https://github.com/user-attachments/assets/4219ddb5-8873-4b63-a93d-6bf948fda796" />
+
+<img width="822" height="853" alt="Image" src="https://github.com/user-attachments/assets/11da9fcd-9aa0-49b5-a05c-64624e57d4d6" />
+
+<img width="1562" height="783" alt="Image" src="https://github.com/user-attachments/assets/a7023cad-c92f-49ba-8f9c-8e09db81bea9" />
 
 ---
 
